@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);  
+  color: #333;
+  font-size: 18px;
+  font-family: 'Cavea', cursive;
+}
+
+input,
+select {
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+
+  &:focus {
+    border-color: #d08051;
+    outline: none;
+  }
+}
+
+select {
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d08051;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+
+  &:hover {
+      background-color: #a15d36;
+      transform: scale(1.02);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+}

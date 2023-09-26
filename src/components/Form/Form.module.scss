@@ -1,0 +1,38 @@
+.c-form {
+    flex-direction: column;
+    margin-bottom: 30px;
+      
+    .input,
+    .select,
+    .button {
+      flex: none;
+      width: 100%;
+    }
+  
+    .input,
+    .select {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+
+        .input,
+        .select {
+          margin-bottom: 0;
+        }
+    
+        .input {
+            flex: 4;
+        }
+    
+        .select,
+        .button {
+            flex: 1;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.c-list {
+    display: flex;
+    flex-direction: column;
+
+    .sort {
+        padding: 5px;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+
+    .items {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .empty {
+        margin-bottom: 50px;
+    }
+
+    .clear {
+        padding: 8px 16px;
+        margin-bottom: 30px;
+        color: #d08051;
+        background-color: #fff;
+    }
+}

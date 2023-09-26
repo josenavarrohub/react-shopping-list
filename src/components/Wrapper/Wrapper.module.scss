@@ -1,0 +1,25 @@
+.c-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+
+    .children {
+        width: 100%;
+        min-height: 600px;
+        padding: 30px;
+        background-color: #f9f9f9;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .c-wrapper {
+        .children {
+            width: 700px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.c-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #ccc;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        background-color: #f0f0f0;
+    }
+
+    .label {
+        cursor: pointer;
+
+        .completed,
+        .quantity {
+            margin-right: 10px;
+        }
+    
+        .name {
+            margin-right: 20px;
+        }
+    }
+
+    .delete {
+        background-color: #d05151;
+        padding: 5px 10px;
+
+        &:hover {
+            background-color: #b43737;
+        }
+    }
+
+    &.completed {
+        background-color: rgb(226, 255, 197);
+
+        .content {
+            .quantity,
+            .description {
+                text-decoration: line-through;
+                text-decoration-thickness: 3px;
+            }
+        }
+    }
+}
